@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/fragement_home"
+        android:name="com.ltx.zc.fragment.FragmentHome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_sort"
+        android:name="com.ltx.zc.fragment.FragmentSort"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_purchase"
+        android:name="com.ltx.zc.fragment.FragmentMyPurchase"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_my"
+        android:name="com.ltx.zc.fragment.FragmentPersonal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/mainbg" />
+
+    <RadioGroup
+        android:id="@+id/bottomRg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/rg_btn_style"
+            android:checked="true"
+            android:drawableTop="@drawable/main_home_selector"
+            android:text="@string/homepage"
+            android:textColor="@drawable/main_home_textcolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <RadioButton
+            android:id="@+id/rb_sort"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/main_sort_selector"
+            android:text="@string/category"
+            android:textColor="@drawable/main_home_textcolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <RadioButton
+            android:id="@+id/rb_purchase"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/main_purchase_selector"
+            android:text="@string/shopping"
+            android:textColor="@drawable/main_home_textcolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/main_person_selector"
+            android:text="@string/personal"
+            android:textColor="@drawable/main_home_textcolor"
+            android:textSize="@dimen/textSize_14" />
+    </RadioGroup>
+
+</LinearLayout>

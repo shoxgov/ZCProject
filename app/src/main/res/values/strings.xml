@@ -18,5 +18,8 @@
     <string name="generic_server_down">连接服务器失败~!</string>
     <string name="generic_error">网络异常,请稍后再试~!</string>
     <string name="process_data_exception_try">数据处理异常,请重试!</string>
-
+    <string name="homepage">首页</string>
+    <string name="category">分类</string>
+    <string name="shopping">购物车</string>
+    <string name="personal">我的</string>
 </resources>
