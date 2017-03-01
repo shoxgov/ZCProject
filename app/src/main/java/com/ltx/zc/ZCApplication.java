@@ -9,6 +9,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.ltx.zc.utils.BitmapLruCache;
 import com.ltx.zc.utils.CrashHandler;
+import com.umeng.analytics.MobclickAgent;
 
 /**
  * Created by Administrator on 2017-02-20.
@@ -87,6 +88,7 @@ public class ZCApplication extends Application {
         crashHandler.init(this);
         String SAVEPATH = Environment.getExternalStorageDirectory()
                 + "/zcProject/ImageCache";
+        MobclickAgent.startWithConfigure(new MobclickAgent.UMAnalyticsConfig(this, "58b644c22ae85b5645001992", "laotongxue-Android", MobclickAgent.EScenarioType.E_UM_NORMAL,true));
     }
 
 }

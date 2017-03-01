@@ -18,6 +18,7 @@ import com.ltx.zc.net.NetCallBack;
 import com.ltx.zc.net.request.LoginReq;
 import com.ltx.zc.net.response.LoginResponse;
 import com.ltx.zc.utils.ToastTool;
+import com.umeng.analytics.MobclickAgent;
 
 
 /**
@@ -73,7 +74,6 @@ public class LoginActivity extends Activity implements NetCallBack {
 
     }
 
-
     /**
      * Attempts to sign in or register the account specified by the login form.
      * If there are form errors (invalid email, missing fields, etc.), the
@@ -88,16 +88,12 @@ public class LoginActivity extends Activity implements NetCallBack {
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
-
+        MobclickAgent.onProfileSignIn("0000");
         Intent intent = new Intent();
         intent.setClass(LoginActivity.this, MainFragmentActivity.class);
         startActivity(intent);
         finish();
     }
-
-
-
-
 
     @Override
     public void onNetResponse(BaseResponse baseRes) {
@@ -114,8 +110,6 @@ public class LoginActivity extends Activity implements NetCallBack {
     public void onNetErrorResponse(String tag, Object error) {
 
     }
-
-
 
     private void requestLogin(String user,String pwd){
         LoginReq req = new LoginReq();

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            style="@style/rg_btn_style"
+            android:background="@drawable/drawable_boarder_corner_graytowhite"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="按机构" />
+
+        <RadioButton
+            style="@style/rg_btn_style"
+            android:background="@drawable/drawable_boarder_corner_graytowhite"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="按活动" />
+    </RadioGroup>
+
+    <include layout="@layout/search_bar" />
+
+    <ListView
+        android:id="@+id/enroll_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>

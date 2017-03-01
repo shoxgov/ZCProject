@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/top_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="18dip"
+    android:paddingRight="10dip"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/et_goods_searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="28dip"
+            android:background="@mipmap/searchbar_bg"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:paddingLeft="28dip"
+            android:paddingRight="28dip" />
+
+        <ImageView
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="2dip"
+            android:src="@mipmap/searchbar_icon" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/search"
+        android:textColor="@color/white" />
+
+</LinearLayout>

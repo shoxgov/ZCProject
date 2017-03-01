@@ -39,9 +39,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LoginActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".activity.LoginActivity"/>
         <activity android:name=".activity.MainFragmentActivity"/>
+        <meta-data android:value="58b644c22ae85b5645001992" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="laotongxue-Android" android:name="UMENG_CHANNEL"/>
     </application>
 
 </manifest>

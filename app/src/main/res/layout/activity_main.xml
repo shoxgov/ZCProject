@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
@@ -14,14 +13,14 @@
 
     <fragment
         android:id="@+id/fragement_sort"
-        android:name="com.ltx.zc.fragment.FragmentSort"
+        android:name="com.ltx.zc.fragment.FragmentEnroll"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="10" />
 
     <fragment
         android:id="@+id/fragement_purchase"
-        android:name="com.ltx.zc.fragment.FragmentMyPurchase"
+        android:name="com.ltx.zc.fragment.FragmentCommunity"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="10" />
@@ -57,18 +56,18 @@
             android:textSize="@dimen/textSize_14" />
 
         <RadioButton
-            android:id="@+id/rb_sort"
+            android:id="@+id/rb_enroll"
             style="@style/rg_btn_style"
             android:drawableTop="@drawable/main_sort_selector"
-            android:text="@string/category"
+            android:text="@string/enroll"
             android:textColor="@drawable/main_home_textcolor"
             android:textSize="@dimen/textSize_14" />
 
         <RadioButton
-            android:id="@+id/rb_purchase"
+            android:id="@+id/rb_community"
             style="@style/rg_btn_style"
             android:drawableTop="@drawable/main_purchase_selector"
-            android:text="@string/shopping"
+            android:text="@string/community"
             android:textColor="@drawable/main_home_textcolor"
             android:textSize="@dimen/textSize_14" />
 

@@ -14,6 +14,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.ltx.zc.R;
 import com.ltx.zc.utils.ToastTool;
+import com.umeng.analytics.MobclickAgent;
 
 
 /**
@@ -25,7 +26,7 @@ public class MainFragmentActivity extends FragmentActivity {
 	private RadioGroup bottomRg;
 	private FragmentManager fragmentManager;
 	private FragmentTransaction fragmentTransaction;
-	private RadioButton rb_home, rb_sort, rb_purchase, rb_my;
+	private RadioButton rb_home, rb_enroll, rb_community, rb_my;
 	/**
 	 * 连续2次退出键才算退出
 	 */
@@ -66,13 +67,13 @@ public class MainFragmentActivity extends FragmentActivity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		//MobclickAgent.onResume(this);
+		MobclickAgent.onResume(this);
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
-		//MobclickAgent.onPause(this);
+		MobclickAgent.onPause(this);
 	}
 
 	@Override
@@ -99,8 +100,8 @@ public class MainFragmentActivity extends FragmentActivity {
 
 		bottomRg = (RadioGroup) findViewById(R.id.bottomRg);
 		rb_home = (RadioButton) findViewById(R.id.rb_home);
-		rb_sort = (RadioButton) findViewById(R.id.rb_sort);
-		rb_purchase = (RadioButton) findViewById(R.id.rb_purchase);
+		rb_enroll = (RadioButton) findViewById(R.id.rb_enroll);
+		rb_community = (RadioButton) findViewById(R.id.rb_community);
 		rb_my = (RadioButton) findViewById(R.id.rb_my);
 
 		bottomRg.setOnCheckedChangeListener(new OnCheckedChangeListener() {
@@ -117,13 +118,13 @@ public class MainFragmentActivity extends FragmentActivity {
 					fragmentTransaction.show(mFragments[0]).commit();
 					break;
 
-				case R.id.rb_sort:
-					rb_sort.setChecked(true);
+				case R.id.rb_enroll:
+					rb_enroll.setChecked(true);
 					fragmentTransaction.show(mFragments[1]).commit();
 					break;
 
-				case R.id.rb_purchase:
-					rb_purchase.setChecked(true);
+				case R.id.rb_community:
+					rb_community.setChecked(true);
 					fragmentTransaction.show(mFragments[2]).commit();
 					break;
 
@@ -141,8 +142,8 @@ public class MainFragmentActivity extends FragmentActivity {
 
 	private void initBottomRadio() {
 		rb_home.setChecked(false);
-		rb_sort.setChecked(false);
-		rb_purchase.setChecked(false);
+		rb_enroll.setChecked(false);
+		rb_community.setChecked(false);
 		rb_my.setChecked(false);
 	}
 }

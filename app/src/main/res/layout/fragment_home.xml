@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--<include layout="@layout/goods_list_bar" />-->
     <LinearLayout
         android:id="@+id/bannerlayout"
         android:layout_width="match_parent"
