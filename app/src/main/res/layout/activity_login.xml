@@ -1,21 +1,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:gravity="center_horizontal"
-    android:orientation="vertical"
-    tools:context="com.ltx.zc.activity.LoginActivity">
+    android:orientation="vertical">
     <!-- android:paddingRight="@dimen/activity_horizontal_margin"-->
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@color/mainbg"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp">
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
 
         <ImageButton
-            android:id="@+id/title_left_img"
+            android:id="@+id/login_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -30,7 +29,6 @@
             android:scaleType="center"
             android:src="@drawable/drawable_common_title_back" />
 
-
         <TextView
             android:id="@+id/login_register"
             android:layout_width="wrap_content"
@@ -43,7 +41,8 @@
             android:paddingLeft="15dip"
             android:paddingRight="15dip"
             android:paddingTop="3dip"
-            android:text="注册" />
+            android:text="注册"
+            android:textSize="@dimen/textSize_18" />
 
     </RelativeLayout>
 
@@ -55,7 +54,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@mipmap/ic_launcher" />
+        android:background="@mipmap/kuanglogo" />
 
     <Space
         android:layout_width="match_parent"
@@ -73,7 +72,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/home" />
+            android:background="@mipmap/user" />
 
         <EditText
             android:layout_width="0dp"
@@ -94,20 +93,23 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dip"
-        android:layout_marginTop="5dp"
-        android:background="@color/mainbg" />
+        android:layout_marginLeft="@dimen/themepadding"
+        android:layout_marginRight="@dimen/themepadding"
+        android:layout_marginTop="10dp"
+        android:background="@color/line" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/themepadding"
         android:layout_marginRight="@dimen/themepadding"
+        android:layout_marginTop="10dp"
         android:gravity="center_vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/home" />
+            android:background="@mipmap/password" />
 
         <EditText
             android:layout_width="match_parent"
@@ -122,8 +124,10 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dip"
-        android:layout_marginTop="5dp"
-        android:background="@color/mainbg" />
+        android:layout_marginLeft="@dimen/themepadding"
+        android:layout_marginRight="@dimen/themepadding"
+        android:layout_marginTop="10dp"
+        android:background="@color/line" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -131,8 +135,8 @@
         android:layout_gravity="left"
         android:layout_marginLeft="@dimen/themepadding"
         android:layout_marginRight="@dimen/themepadding"
-        android:visibility="invisible"
-        android:text="记住我" />
+        android:text="记住我"
+        android:visibility="invisible" />
 
     <Space
         android:layout_width="match_parent"
@@ -146,13 +150,19 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/themepadding"
         android:layout_marginRight="@dimen/themepadding"
-        android:text="登录" />
+        android:background="@drawable/drawable_buttonbg"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_18" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/themepadding"
         android:layout_marginRight="@dimen/themepadding"
+        android:layout_marginTop="10dp"
         android:weightSum="1">
 
         <TextView
@@ -177,5 +187,86 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="12" />
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/themepadding"
+        android:layout_marginRight="@dimen/themepadding"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:weightSum="2">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dip"
+            android:layout_weight="1"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="第三方账号登录" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dip"
+            android:layout_weight="1"
+            android:background="@color/line" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/themepadding"
+        android:layout_marginRight="@dimen/themepadding"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_wx" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_sina" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_qq" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
 </LinearLayout>

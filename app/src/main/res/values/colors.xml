@@ -29,7 +29,7 @@
     <color name="white_background">#ffffff</color>
     <color name="blue_text">#008fd7</color>
     <color name="navpage">#FFE1E8EB</color>
-    <color name="line">#cdcdcd</color>
+    <color name="line">#e5e5e5</color>
     <color name="style_black_text">#898989</color>
     <color name="usertext">#666666</color>
 </resources>
