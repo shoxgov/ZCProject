@@ -31,4 +31,5 @@
     <color name="navpage">#FFE1E8EB</color>
     <color name="line">#cdcdcd</color>
     <color name="style_black_text">#898989</color>
+    <color name="usertext">#666666</color>
 </resources>

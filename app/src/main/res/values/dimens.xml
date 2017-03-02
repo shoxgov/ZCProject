@@ -6,4 +6,6 @@
     <dimen name="textSize_18">18dip</dimen>
     <dimen name="textSize_16">16dip</dimen>
     <dimen name="textSize_14">14dip</dimen>
+    <dimen name="themepadding">10dip</dimen>
+
 </resources>
